@@ -3,7 +3,6 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Rule
 Bundle-SymbolicName: supplement.rule.beans;singleton:=true
 Bundle-Version: 7.3.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: ch.ivyteam.ivy.components;bundle-version="7.3.0",
  ch.ivyteam.ivy.bpm.exec;bundle-version="7.3.0",
  ch.ivyteam.ivy.designer.process.ui;bundle-version="7.3.0";resolution:=optional,
@@ -23,3 +22,4 @@ Bundle-ClassPath: lib/camunda-commons-logging-1.4.0.jar,
  lib/slf4j-api-1.7.7.jar,
  .
 Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: supplement.rule.beans
