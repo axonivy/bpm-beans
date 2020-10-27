@@ -12,7 +12,6 @@ public class RuleBeansIcons
   private static final ImageDescriptor NO_IMAGE = new ImageDescriptor()
   {
     @Override
-    @SuppressWarnings("deprecation")
     public ImageData getImageData()
     {
       return null;
@@ -22,7 +21,7 @@ public class RuleBeansIcons
   public static final ImageDescriptor CONDITION_COLUMN = loadIcon("cell-import.png");
   public static final ImageDescriptor OUTPUT_COLUMN = loadIcon("cell-export.png");
   
-  
+  @SuppressWarnings("deprecation")
   private static ImageDescriptor loadIcon(String name)
   {
     try

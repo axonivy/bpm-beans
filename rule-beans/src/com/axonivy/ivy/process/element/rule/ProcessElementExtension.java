@@ -11,7 +11,6 @@ import ch.ivyteam.ivy.process.element.IExtensibleStandardProcessElementExtension
 
 public class ProcessElementExtension implements IExtensibleStandardProcessElementExtension
 {
-  static final String RULE_ACTIVITY = "RuleActivity";
   static final String DECISION_ACTIVITY = "DecisionActivity";
 
   @Override
@@ -23,7 +22,6 @@ public class ProcessElementExtension implements IExtensibleStandardProcessElemen
   @Override
   public void declareProcessElements(IExtensibleProcessElementFactory factory)
   {
-    factory.declareProgramInterfaceProcessElement(RULE_ACTIVITY, RuleActivity.class.getName(), RULE_ACTIVITY);
     factory.declareProgramInterfaceProcessElement(DECISION_ACTIVITY, DecisionActivity.class.getName(),
             DECISION_ACTIVITY);
   }
@@ -32,11 +30,7 @@ public class ProcessElementExtension implements IExtensibleStandardProcessElemen
   public Icon createBpmnIcon(IBpmnIconFactory iconFactory, String iconName)
   {
     String img = null;
-    if (RULE_ACTIVITY.equals(iconName))
-    {
-      img = "RuleActivity.png";
-    }
-    else if (DECISION_ACTIVITY.equals(iconName))
+    if (DECISION_ACTIVITY.equals(iconName))
     {
       img = "DecisionActivity.png";
     }
