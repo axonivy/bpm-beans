@@ -23,7 +23,6 @@ pipeline {
                 '-Divy.engine.directory=${WORKSPACE}/ldap-beans/target/ivyEngine '
 
             archiveArtifacts '*/target/*.jar, */*/target/*.jar,  */samples/*/target/*.iar'
-            junit '**/target/surefire-reports/**/*.xml' 
           }
       }
     }
