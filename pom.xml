@@ -10,8 +10,6 @@
 		<module>blockchain-beans</module>
 		<module>ldap-beans</module>
 		<module>ldap-beans/samples/LdapBeansDemos</module>
-		<module>rule-beans</module>
-		<module>rule-beans/samples/RuleBeansDemos</module>
         <module>timedStartEvent-beans</module>
         <module>excel-beans/ExcelBeans</module>
 		<module>build.maven/central.deploy</module>
