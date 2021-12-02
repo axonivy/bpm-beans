@@ -8,8 +8,6 @@
 
 	<modules>
 		<module>blockchain-beans</module>
-		<module>ldap-beans</module>
-		<module>ldap-beans/samples/LdapBeansDemos</module>
         <module>timedStartEvent-beans</module>
 		<module>build.maven/central.deploy</module>
 		<module>build.maven/ivy.bundle</module>
