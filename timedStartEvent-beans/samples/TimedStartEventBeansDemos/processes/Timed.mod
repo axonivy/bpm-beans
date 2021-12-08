@@ -1,11 +1,9 @@
 [Ivy]
-[>Created: Fri Jul 07 09:41:16 CEST 2017]
-15D1BF74903D053E 3.20 #module
+15D1BF74903D053E 7.5.0 #module
 >Proto >Proto Collection #zClass
 Td0 Timed Big #zClass
 Td0 B #cInfo
 Td0 #process
-Td0 @TextInP .resExport .resExport #zField
 Td0 @TextInP .type .type #zField
 Td0 @TextInP .processKind .processKind #zField
 Td0 @AnnotationInP-0n ai ai #zField
@@ -19,7 +17,6 @@ Td0 @GridStep f0 '' #zField
 Td0 @PushWFArc f2 '' #zField
 Td0 @PushWFArc f4 '' #zField
 >Proto Td0 Td0 Timed #zField
-Td0 f1 type time.start.event.beans.Data #txt
 Td0 f1 337 49 30 30 0 15 #rect
 Td0 f1 @|EndIcon #fIcon
 Td0 f3 outerBean "ch.ivy.beans.TimedStartEventBean" #txt
@@ -45,12 +42,9 @@ Td0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 Td0 f3 @C|.responsibility Everybody #txt
 Td0 f3 81 49 30 30 -43 17 #rect
 Td0 f3 @|StartEventIcon #fIcon
-Td0 f0 actionDecl 'time.start.event.beans.Data out;
-' #txt
 Td0 f0 actionTable 'out=in;
 ' #txt
 Td0 f0 actionCode 'ivy.log.info("process started by timed interval");' #txt
-Td0 f0 type time.start.event.beans.Data #txt
 Td0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
