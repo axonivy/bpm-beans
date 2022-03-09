@@ -9,7 +9,7 @@ import com.axonivy.ivy.process.element.blockchain.EthereumProcessElement;
 
 import ch.ivyteam.ivy.designer.process.ui.editor.palette.IIvyProcessPalette;
 import ch.ivyteam.ivy.designer.process.ui.info.IBpmnProcessElementUi;
-import ch.ivyteam.ivy.designer.process.ui.inscription.masks.fw.IInscriptionEditorTab;
+import ch.ivyteam.ivy.designer.inscription.ui.masks.fw.IInscriptionEditorTab;
 import ch.ivyteam.ivy.process.config.activity.pi.ThirdPartyProgramInterfaceConfigurator;
 import ch.ivyteam.ivy.process.config.element.ElementConfigurator;
 import ch.ivyteam.ivy.process.model.NodeElement;
@@ -24,6 +24,7 @@ public class EthereumProcessElementUi implements IBpmnProcessElementUi
     palette.addGroup(BLOCKCHAIN_GROUP, BLOCKCHAIN_GROUP, 12000);
   }
 
+  @SuppressWarnings("deprecation")
   @Override
   public void addPaletteEntry(IIvyProcessPalette palette, String name)
   {

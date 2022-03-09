@@ -2,12 +2,11 @@ package com.axonivy.ivy.process.element.blockchain.ui;
 
 import org.eclipse.swt.widgets.Composite;
 
-import ch.ivyteam.ivy.designer.process.ui.inscription.masks.fw.IInscriptionEditorTab;
-import ch.ivyteam.ivy.designer.process.ui.inscription.model.AbstractUiModelSwtInscriptionTab;
+import ch.ivyteam.ivy.designer.inscription.ui.masks.fw.IInscriptionEditorTab;
+import ch.ivyteam.ivy.designer.inscription.ui.model.AbstractUiModelSwtInscriptionTab;
 import ch.ivyteam.ivy.ui.model.swt.IvySwtBinder;
 
-public class BlockchainResponseTab extends AbstractUiModelSwtInscriptionTab<BlockchainResponseUiModel> implements IInscriptionEditorTab
-{
+public class BlockchainResponseTab extends AbstractUiModelSwtInscriptionTab<BlockchainResponseUiModel> implements IInscriptionEditorTab {
 
   public BlockchainResponseTab(BlockchainResponseUiModel model)
   {

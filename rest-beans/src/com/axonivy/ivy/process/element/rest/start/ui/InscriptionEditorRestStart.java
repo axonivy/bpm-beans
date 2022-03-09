@@ -5,13 +5,13 @@ import java.util.List;
 
 import com.axonivy.ivy.process.element.rest.start.RestStartExtension;
 
-import ch.ivyteam.ivy.designer.process.ui.inscriptionMasks.BpmnInscriptionEditor;
-import ch.ivyteam.ivy.designer.process.ui.inscriptionMasks.fw.IInscriptionEditorTab;
-import ch.ivyteam.ivy.process.config.element.AbstractProcessElementConfigurator;
-import ch.ivyteam.ivy.process.config.element.thirdPartyProgramStart.ThirdPartyProgramStartConfigurator;
+import ch.ivyteam.ivy.designer.inscription.ui.masks.fw.IInscriptionEditorTab;
+import ch.ivyteam.ivy.designer.inscription.ui.thirdparty.BpmnInscriptionEditor;
+import ch.ivyteam.ivy.process.config.element.ElementConfigurator;
+import ch.ivyteam.ivy.process.config.event.start.pi.ThirdPartyProgramStartConfigurator;
 import ch.ivyteam.ivy.process.model.NodeElement;
 
-@SuppressWarnings("restriction")
+@SuppressWarnings("all")
 public class InscriptionEditorRestStart implements BpmnInscriptionEditor
 {
   @Override
@@ -21,8 +21,7 @@ public class InscriptionEditorRestStart implements BpmnInscriptionEditor
   }
 
   @Override
-  public <T extends AbstractProcessElementConfigurator<? extends NodeElement>> List<IInscriptionEditorTab> getTabs(
-          T configurator)
+  public <T extends ElementConfigurator<? extends NodeElement>> List<IInscriptionEditorTab> getTabs(T configurator)
   {
     return getTabs((ThirdPartyProgramStartConfigurator) configurator);
   }
