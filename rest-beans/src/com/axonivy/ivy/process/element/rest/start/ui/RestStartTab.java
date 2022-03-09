@@ -2,8 +2,8 @@ package com.axonivy.ivy.process.element.rest.start.ui;
 
 import org.eclipse.swt.widgets.Composite;
 
-import ch.ivyteam.ivy.designer.process.ui.inscriptionMasks.fw.AbstractUiModelSwtInscriptionTab;
-import ch.ivyteam.ivy.designer.process.ui.inscriptionMasks.fw.IInscriptionEditorTab;
+import ch.ivyteam.ivy.designer.inscription.ui.model.AbstractUiModelSwtInscriptionTab;
+import ch.ivyteam.ivy.designer.inscription.ui.masks.fw.IInscriptionEditorTab;
 import ch.ivyteam.ivy.ui.model.swt.IvySwtBinder;
 
 @SuppressWarnings("restriction")

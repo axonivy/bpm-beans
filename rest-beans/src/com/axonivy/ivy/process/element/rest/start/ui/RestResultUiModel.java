@@ -9,7 +9,7 @@ import java.util.Map.Entry;
 import java.util.TreeSet;
 
 import ch.ivyteam.ivy.datawrapper.scripting.IvyScriptInscriptionModel;
-import ch.ivyteam.ivy.designer.process.ui.inscriptionMasks.model.UiModel;
+import ch.ivyteam.ivy.designer.inscription.ui.model.UiModel;
 import ch.ivyteam.ivy.process.config.element.ElementConfigurator;
 import ch.ivyteam.ivy.process.config.event.start.pi.ThirdPartyProgramStartConfigurator;
 import ch.ivyteam.ivy.process.model.element.event.start.ThirdPartyProgramStart;
