@@ -3,11 +3,12 @@ Bundle-ManifestVersion: 2
 Bundle-Vendor: Axon Ivy AG
 Bundle-Name: Blockchain
 Bundle-SymbolicName: supplement.blockchain.beans;singleton:=true
-Bundle-Version: 9.2.0.qualifier
+Bundle-Version: 9.4.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: ch.ivyteam.ivy.components,
  ch.ivyteam.ivy.bpm.exec,
  ch.ivyteam.ivy.designer.process.ui;resolution:=optional,
+ ch.ivyteam.ivy.designer.inscription.ui;resolution:=optional,
  ch.ivyteam.ivy.designer.ide;resolution:=optional,
  ch.ivyteam.ivy.process.config,
  ch.ivyteam.lib.jackson;resolution:=optional,
