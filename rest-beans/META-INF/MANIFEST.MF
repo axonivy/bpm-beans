@@ -5,7 +5,6 @@ Bundle-SymbolicName: RestStart;singleton:=true
 Bundle-Version: 9.4.0.qualifier
 Bundle-Vendor: Axon Ivy
 Automatic-Module-Name: RestStart
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: ch.ivyteam.ivy.components,
  ch.ivyteam.ivy.bpm.exec,
  ch.ivyteam.ivy.process.config,
