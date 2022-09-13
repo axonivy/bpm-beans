@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Vendor: Axon Ivy AG
+Bundle-Name: Blockchain
+Bundle-SymbolicName: supplement.blockchain.beans.tests;singleton:=true
+Bundle-Version: 9.4.0.qualifier
+Require-Bundle: supplement.blockchain.beans,
+ ch.ivyteam.ivy.components,
+ ch.ivyteam.ivy.bpm.exec,
+ org.assertj,
+ org.junit
+Bundle-ActivationPolicy: lazy

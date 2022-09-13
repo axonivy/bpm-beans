@@ -8,6 +8,7 @@
 
 	<modules>
 		<module>blockchain-beans</module>
+		<module>blockchain-beans-tests</module>
         <module>timedStartEvent-beans</module>
 		<module>build.maven/central.deploy</module>
 		<module>build.maven/ivy.bundle</module>

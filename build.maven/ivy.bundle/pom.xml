@@ -11,7 +11,7 @@
 	<packaging>pom</packaging>
 	
 	<properties>
-		<tycho.version>1.4.0</tycho.version>
+		<tycho.version>2.6.0</tycho.version>
 	</properties>
 
 	<repositories>
@@ -46,6 +46,9 @@
 					<groupId>org.eclipse.tycho</groupId>
 					<artifactId>target-platform-configuration</artifactId>
 					<version>${tycho.version}</version>
+					<configuration>
+						<executionEnvironment>JavaSE-17</executionEnvironment>
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
