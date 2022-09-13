@@ -1,0 +1,48 @@
+{
+  "format" : "9.4.8",
+  "id" : "15D1BF74903D053E",
+  "data" : "time.start.event.beans.Data",
+  "elements" : [ {
+      "id" : "f1",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 352, "y" : 64 }
+      }
+    }, {
+      "id" : "f3",
+      "type" : "ProgramStart",
+      "name" : "batch convert",
+      "config" : {
+        "beanConfig" : [
+          "#TimedStartEventBeanProperties",
+          "#Fri Jul 07 09:41:15 CEST 2017",
+          "hour=03",
+          "immediately=false",
+          "day=2",
+          "interval=36000",
+          "minute=52"
+        ],
+        "outerBean" : "ch.ivy.beans.TimedStartEventBean"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 64 },
+        "labelOffset" : { "x" : -43, "y" : 17 }
+      },
+      "connect" : { "id" : "f2", "to" : "f0" }
+    }, {
+      "id" : "f0",
+      "type" : "Script",
+      "name" : "read files",
+      "config" : {
+        "output" : {
+          "code" : "ivy.log.info(\"process started by timed interval\");"
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 224, "y" : 64 },
+        "size" : { "width" : 112, "height" : 44 },
+        "labelOffset" : { "x" : -29, "y" : -7 }
+      },
+      "connect" : { "id" : "f4", "to" : "f1" }
+    } ]
+}
