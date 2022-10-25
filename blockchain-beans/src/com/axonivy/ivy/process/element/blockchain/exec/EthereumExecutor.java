@@ -124,22 +124,22 @@ public final class EthereumExecutor
     }
   }
 
-  private static Class<?> loadClassWithCurrentClassloader(String fullyQualifiedClassName) throws ClassNotFoundException
+  private static Class<?> loadClassWithCurrentClassloader(String fullyQualifiedClassName) throws Exception
   {
     try
     {
       return EthereumExecutor.class.getClassLoader().loadClass(fullyQualifiedClassName);
     }
-    catch (ClassNotFoundException ex)
+    catch (Exception ex)
     {
       return loadClassWithProjectClassloader(fullyQualifiedClassName);
     }
   }
 
-  private static Class<?> loadClassWithProjectClassloader(String fullyQualifiedClassName) throws ClassNotFoundException
+  private static Class<?> loadClassWithProjectClassloader(String fullyQualifiedClassName) throws Exception
   {
     IProcessModelVersion pmv = DiCore.getGlobalInjector().getInstance(IProcessModelVersion.class);
-    ClassLoader projectClassLoader = Sudo.exec(() -> IvyProjectNavigationUtil.getIvyProject(pmv.getProject()).getProjectClassLoader());
+    ClassLoader projectClassLoader = Sudo.call(() -> IvyProjectNavigationUtil.getIvyProject(pmv.getProject()).getProjectClassLoader());
     return ClassUtils.getClass(projectClassLoader, fullyQualifiedClassName, false);
   }
 
