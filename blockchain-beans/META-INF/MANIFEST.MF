@@ -6,8 +6,8 @@ Bundle-SymbolicName: supplement.blockchain.beans;singleton:=true
 Bundle-Version: 11.1.0.qualifier
 Require-Bundle: ch.ivyteam.ivy.components,
  ch.ivyteam.ivy.bpm.exec,
- ch.ivyteam.ivy.designer.process.ui;resolution:=optional,
  ch.ivyteam.ivy.designer.inscription.ui;resolution:=optional,
+ ch.ivyteam.ivy.designer.process.ui;resolution:=optional,
  ch.ivyteam.ivy.designer.ide;resolution:=optional,
  ch.ivyteam.ivy.process.config,
  ch.ivyteam.lib.jackson;resolution:=optional,

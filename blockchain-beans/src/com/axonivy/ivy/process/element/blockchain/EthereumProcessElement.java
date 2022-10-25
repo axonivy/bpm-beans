@@ -18,4 +18,20 @@ public class EthereumProcessElement implements IBpmnProcessElement
   {
     return EthereumActivity.class;
   }
+
+  @Override
+  public String getDescription() {
+    return "Executes an Ethereum call";
+  }
+
+  @Override
+  public String getElementGroup() {
+    return "Blockchain";
+  }
+
+  @Override
+  public String getShortLabel() {
+    return "Ethereum";
+  }
+
 }
