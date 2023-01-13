@@ -1,7 +1,9 @@
 {
-  "format" : "9.4.8",
+  "format" : "10.0.0",
   "id" : "15D1BF74903D053E",
-  "data" : "time.start.event.beans.Data",
+  "config" : {
+    "data" : "time.start.event.beans.Data"
+  },
   "elements" : [ {
       "id" : "f1",
       "type" : "TaskEnd",
@@ -14,19 +16,18 @@
       "name" : "batch convert",
       "config" : {
         "beanConfig" : [
-          "#TimedStartEventBeanProperties",
-          "#Fri Jul 07 09:41:15 CEST 2017",
-          "hour=03",
+          "# Starts today at 00:00 every hour ",
           "immediately=false",
-          "day=2",
-          "interval=36000",
-          "minute=52"
+          "day=0",
+          "hour=0",
+          "minute=0",
+          "interval=3600"
         ],
         "outerBean" : "ch.ivy.beans.TimedStartEventBean"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 },
-        "labelOffset" : { "x" : -43, "y" : 17 }
+        "labelOffset" : { "x" : 3, "y" : 37 }
       },
       "connect" : { "id" : "f2", "to" : "f0" }
     }, {
@@ -39,9 +40,7 @@
         }
       },
       "visual" : {
-        "at" : { "x" : 224, "y" : 64 },
-        "size" : { "width" : 112, "height" : 44 },
-        "labelOffset" : { "x" : -29, "y" : -7 }
+        "at" : { "x" : 224, "y" : 64 }
       },
       "connect" : { "id" : "f4", "to" : "f1" }
     } ]

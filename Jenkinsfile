@@ -22,7 +22,7 @@ pipeline {
                 '-Divy.engine.list.url=https://jenkins.ivyteam.io/job/core_product/job/master/lastSuccessfulBuild/ ' +
                 '-Divy.engine.directory=${WORKSPACE}/ldap-beans/target/ivyEngine '
 
-            archiveArtifacts '*/target/*.jar, */*/target/*.jar,  */samples/*/target/*.iar'
+            archiveArtifacts '*/target/*.jar, */*/target/*.jar, **/target/*.iar'
             junit '**/target/surefire-reports/**/*.xml' 
           }
       }
