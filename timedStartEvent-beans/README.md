@@ -2,7 +2,7 @@
 A timed start event bean with weekday, time and interval parameters
 
 ## Installation Axon Ivy 11 and later
-1. Download the `supplement.timedStartEvent.beans-X.Y.Z-SNAPSHOT.iar` from the [latest release](https://github.com/ivy-supplements/bpm-beans/releases/latest)
+1. Download the `supplement.timedStartEvent.beans-X.Y.Z-SNAPSHOT.iar` from the [latest release](https://github.com/axonivy/bpm-beans/releases)
 2. Import the downloaded IAR
 3. Make a dependency from your project to the imported `TimedStartEventBean` ivy project
 
