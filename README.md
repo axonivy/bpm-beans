@@ -7,4 +7,3 @@ An Ethereum Blockchain bean to do calls against Ethereum contracts, with input a
 
 ## [TIMED START](timedStartEvent-beans/README.md)
 A timed start event bean with weekday, time and interval parameters.
-![TIMED BEAN EDITOR](timedStartEvent-beans/samples/screenshots/timedStartEventBean_editorMask.png)
