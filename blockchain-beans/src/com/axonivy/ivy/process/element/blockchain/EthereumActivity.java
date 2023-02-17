@@ -22,7 +22,7 @@ import ch.ivyteam.ivy.process.model.value.MappingCode;
 import ch.ivyteam.ivy.scripting.exceptions.IvyScriptException;
 import ch.ivyteam.ivy.scripting.language.IIvyScriptContext;
 import ch.ivyteam.ivy.scripting.objects.CompositeObject;
-import ch.ivyteam.ivy.scripting.restricted.execution.IvyScriptCode;
+import ch.ivyteam.ivy.scripting.execution.IvyScriptCode;
 import ch.ivyteam.ivy.scripting.system.IIvyScriptClassRepository;
 import ch.ivyteam.ivy.scripting.util.IvyScriptProcessVariables;
 
