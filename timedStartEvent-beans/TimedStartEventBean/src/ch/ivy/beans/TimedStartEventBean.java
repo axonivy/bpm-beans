@@ -17,9 +17,11 @@ import ch.ivyteam.ivy.service.ServiceException;
 
 /**
  * An Eventbean which is triggered after a given date or interval
- * 
+ *
  * @version 29.09.2016 bb Axon Ivy6.3
+ * @deprecated use TimerBean instead
  */
+@Deprecated(since="11.2")
 public class TimedStartEventBean implements IProcessStartEventBean {
 	private static interface Property {
 		String START_DAY_OF_WEEK = "day";
@@ -96,7 +98,6 @@ public class TimedStartEventBean implements IProcessStartEventBean {
 	}
 
 	@Override
-	@SuppressWarnings("deprecation")
 	public void start(IProgressMonitor monitor) throws ServiceException {
 		if (!running) {
 			running = true;
@@ -201,7 +202,7 @@ public class TimedStartEventBean implements IProcessStartEventBean {
 
 			String help = """
 					This start event bean fires periodically according to the specified parameters.
-					
+
 					Start
 					=====
 					Either set 'immediately=true' to start immediately or set when to start with the 'day', 'hour', 'minute' property.
@@ -219,7 +220,7 @@ public class TimedStartEventBean implements IProcessStartEventBean {
 					========
 					The format of the interval is an integer in seconds:
 					- interval=1 : 1 Second
-					- interval=60 : 1 Minute 
+					- interval=60 : 1 Minute
 					- interval=3600 : 1 Hour
 					- interval=86400 : 1 Day
 					""";
